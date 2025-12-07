@@ -74,10 +74,14 @@ If a user request conflicts with `tech_guidance`, you must point it out immediat
 ## 2. 🚦 Context Switch Rules (Only for Hybrid Topology)
 ### Mode 0: Inception (Requirement Analysis)  → **This part is copied directly. DO NOT forget**
 - **Trigger:** User provides a raw idea, a one-sentence request, or asks for "brainstorming".
-- **Goal:** Transmute a vague thought into a concrete `docs/requirements/*.md` spec.
+- **Goal:** Transmute a vague thought into a concrete `agent_docs/requirements/*.md` spec.
 - **Constraint:**
     - **NO CODE GENERATION:** Do not write implementation code in this mode.
     - **Devil's Advocate:** You must aggressively identify **Blind Spots** (Performance bottlenecks, Technology limitations, Edge cases).
+    - **Protocol:**
+       1.  **Consult:** Ask clarifying questions if Tech Stack or Scope is ambiguous.
+       2.  **Plan:** Generate a plan strictly following the template: `agent_docs/_templates/feature_implementation_plan.md`.
+       3.  **Refine:** Wait for user approval on the plan before moving to Mode A.
     - **Options First:** Never assume one solution; always propose 3 variants (MVP / Balanced / Advanced).
 
 [Define Mode A vs Mode B vs Mode C constraints. **CRITICAL:** You MUST bind specific file extensions (e.g., `*.kt`, `*.tsx`, `*.rs`) to each Mode to trigger context switching.]
@@ -98,7 +102,7 @@ you MUST:
 ### For Mode 0 (The "Booster" Loop):   → **This part is copied directly. DO NOT forget**
 1.  **Expansion:** Propose 3 implementation approaches with distinct User Experience flows.
 2.  **Critique:** Perform a "Technical Pre-mortem" (Identify risks, API pitfalls, and other issues).
-3.  **Convergence:** Upon user selection, generate a standardized requirement document in `docs/requirements/`.
+3.  **Convergence:** Upon user selection, generate a standardized requirement document in `agent_docs/requirements/`.
 
 [Adapt to Stack:]
 - **Contract:** Chinese Logic -> English Interface.
