@@ -27,7 +27,7 @@
 - ✅ 代码示例仅保留"正确范式"（Good Pattern）
 
 ## 使用场景
-参考以下的风格，基于当前的项目背景，为当前技术规则文档输出一句简明扼要的“智能导航”式场景触发词：
+参考以下的风格，基于当前的项目背景，为当前技术规则文档输出一句简明扼要的“智能导航”式场景触发词： → 这是不属于**使用模板**的部分，请你另外输出，不要放到当前技术文档的最终输出产物中（例如：`spring-boot-rest-api-rules.md`）
 ```
 - `edt-threading-rules.md`: 当你开发IntelliJ插件的 Swing UI 操作时或者需要执行耗时操作（如网络请求、文件 IO、AI 调用）时查阅该规则
 - `intellij-psi-usage-rules.md`: 当你需要读取或修改IntelliJ插件开发SDK提供的的 Java/Kotlin 源代码的结构化表示（Program Structure Interface）时查阅，例如分析代码元素（类、方法、字段）、生成代码、执行代码重构等
