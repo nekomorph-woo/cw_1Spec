@@ -76,7 +76,11 @@ For **New Code**, strictly follow **Vibe Coding** standards.
 ## 2. 🚦 Context Switch Rules (Hybrid Topology)
 ### Mode 0: Inception (Requirement Analysis)  → **This part is copied directly. DO NOT forget**
 - **Trigger:** User provides a raw idea, a one-sentence request, or asks for "brainstorming".
-- **Goal:** Transmute a vague thought into a concrete `docs/requirements/*.md` spec.
+- **Goal:** Transmute a vague thought into a concrete `agent_docs/requirements/*.md` spec.
+- **Protocol:**
+  1.  **Consult:** Ask clarifying questions if Tech Stack or Scope is ambiguous.
+  2.  **Plan:** Generate a plan strictly following the template: `agent_docs/_templates/feature_implementation_plan.md`.
+  3.  **Refine:** Wait for user approval on the plan before moving to Mode A.
 - **Constraint:**
     - **NO CODE GENERATION:** Do not write implementation code in this mode.
     - **Devil's Advocate:** You must aggressively identify **Blind Spots** (Performance bottlenecks, Technology limitations, Edge cases).
