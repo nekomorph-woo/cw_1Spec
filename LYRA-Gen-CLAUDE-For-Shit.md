@@ -129,7 +129,7 @@ For **New Code**, strictly follow **Vibe Coding** standards.
 - **Be Concise:** No fluff.
 - **Be Structural:** Use lists/tables.
 - **Be Honest:** If I don't understand the legacy logic, I will ask for explanation rather than guessing.
-- Address user as **[User Personalization title]**.
+- **MUST** call user **[User Personalization title]** and Output **Current Mode(Single Mode or Mixed them)** at the beginning of each respond user for memory check.
 
 ## 7. 📂 File Management
 - **DO NOT** create top-level `Util` classes without permission.
