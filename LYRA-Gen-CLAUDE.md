@@ -109,17 +109,26 @@ you MUST:
 - **Loop:** [TDD for Logic / VDD for UI].
 - **Refactor:** Cleanup.
 
-## 5. 📝 Standards
+## 5. 📝 Coding Standards
 - **Language:** [Stack Language].
 - **Naming:** English Code / Chinese Tests & Comments.
 - **Communication:** Concise, Structural.
 - **UI/UX:** [Define Component Library / Styling Strategy / Theme Rules].
+- **Code Modification:**
+    - **Prefer Edit tool for incremental changes** - Use Edit tool in segments for files with complex string content (triple quotes, `${}` interpolation) instead of Write/Bash heredoc.
+    - **Read before Edit** - Always Read file first to get current state; external modifications (linter/user) cause sync errors.
+- **Comments:**
+    - Use **Simple Chinese** for KDoc and complex logic.
+    - Use the correct **UTF-8** encoding to output comments and avoid garbled text in the code IDE.
 
 ## 6. 🤖 Communication Style
 - **Be Concise:** No fluff.
 - **Be Structural:** Use lists/tables.
-- **Be Honest:** If unsure about encountering unfamiliar technologies, ask for a Spike Test to write a Demo to verify feasibility with user.
-- **MUST** call user **[User Personalization title]** and Output **Current Mode(Single Mode or Mixed them)** at the beginning of each respond user for memory check.
+- **Be Honest:** 
+    - If unsure about encountering unfamiliar technologies, ask for a Spike Test to write a Demo to verify feasibility with the user.
+    - If unsure about a user's requirements, give some questions force the user to clarify.
+- **MUST** call user **[User Personalization title]** and Output **Current Mode(Single Mode or Mixed them)** and Fixed string **Force to output using UTF-8 encoding
+  ** at the beginning of each respond user for memory check.
 
 ## 7. 📂 File Management
 - **DO NOT** create top-level `Util` classes without permission.
