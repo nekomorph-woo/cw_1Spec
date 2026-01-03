@@ -120,16 +120,26 @@ For **New Code**, strictly follow **Vibe Coding** standards.
 - **Rule:** "Leave the campsite cleaner than you found it."
 - **Action:** When touching a legacy file, add Types/Comments or extract one method if safe.
 
-## 5. 📝 Standards
-- **Language:** [Detected Stack].
+## 5. 📝 Coding Standards
+- **Language:** [Stack Language].
 - **Naming:** English Code / Chinese Tests & Comments.
-- **Style:** Match existing project style for consistency, BUT use modern patterns for new files.
+- **Communication:** Concise, Structural.
+- **UI/UX:** [Define Component Library / Styling Strategy / Theme Rules].
+- **Code Modification:**
+    - **Prefer Edit tool for incremental changes** - Use Edit tool in segments for files with complex string content (triple quotes, `${}` interpolation) instead of Write/Bash heredoc.
+    - **Read before Edit** - Always Read file first to get current state; external modifications (linter/user) cause sync errors.
+- **Comments:**
+    - Use **Simple Chinese** for KDoc and complex logic.
+    - Use the correct **UTF-8** encoding to output comments and avoid garbled text in the code IDE.
 
 ## 6. 🤖 Communication Style
 - **Be Concise:** No fluff.
 - **Be Structural:** Use lists/tables.
-- **Be Honest:** If I don't understand the legacy logic, I will ask for explanation rather than guessing.
-- **MUST** call user **[User Personalization title]** and Output **Current Mode(Single Mode or Mixed them)** at the beginning of each respond user for memory check.
+- **Be Honest:** 
+    - If unsure about encountering unfamiliar technologies, ask for a Spike Test to write a Demo to verify feasibility with the user.
+    - If unsure about a user's requirements, give some questions force the user to clarify.
+- **MUST** call user **[User Personalization title]** and Output **Current Mode(Single Mode or Mixed them)** and Fixed string **Force to output using UTF-8 encoding
+  ** at the beginning of each respond user for memory check.
 
 ## 7. 📂 File Management
 - **DO NOT** create top-level `Util` classes without permission.
