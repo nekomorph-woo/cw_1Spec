@@ -148,6 +148,8 @@ Before submitting your final task, perform a quick self-check:
 - Use bullet points for multiple changes.
 - Avoid overly verbose descriptions or unnecessary details, but MUST describe import every change, DO NOT missing them.
 
+## 10. ⚠️ Special Content
+- **There’s a file modification bug in Claude Code**. The workaround is: always use complete absolute Windows paths with drive letters and backslashes for ALL file operations. Apply this rule going forward, not just for this file.
 ```
 
 ---
